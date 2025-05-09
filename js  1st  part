@@ -1,0 +1,10 @@
+const countryDataApi = 'https://restcountries.com/v3.1/name/';
+const weatherDataApi = 'https://api.openweathermap.org/data/2.5/weather';
+const weatherApiKey = '01f272174d4cf14a8ffa5c8e533038ef'; 
+
+async function getCountryData() {
+    const countryName = document.getElementById('country-name').value.trim();
+    if (!countryName) {
+        alert('Please enter a country name.');
+        return;
+    }
